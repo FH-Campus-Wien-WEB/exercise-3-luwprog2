@@ -88,5 +88,35 @@ module.exports = {
       "https://m.media-amazon.com/images/M/MV5BZjBhYzgyY2YtMTBhZS00NWIwLWIyYTgtMzhhYmFhZDNkMTQxXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg",
     Metascore: 0.1,
     imdbRating: 8.0,
-  }
+  },
+  tt12045190: {
+    imdbID: "tt12045190",
+    Title: "Project Hail Mary",
+    Released: "2026-03-20",
+    Runtime: 145,
+    Genres: ["Sci-Fi", "Adventure", "Drama"],
+    Directors: ["Christopher Miller", "Phil Lord"],
+    Writers: ["Drew Goddard", "Andy Weir"],
+    Actors: ["Ryan Gosling", "Sandra Hüller", "Milana Vayntrub"],
+    Plot: "An astronaut wakes up on a spaceship with no memory of who he is or how he got there. He must use science to save humanity.",
+    Poster:
+      "https://image.tmdb.org/t/p/w600_and_h900_face/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+    Metascore: 85,
+    imdbRating: 8.9,
+  },
+  tt0119698: {
+    imdbID: "tt0119698",
+    Title: "Princess Mononoke",
+    Released: "1997-07-12",
+    Runtime: 133,
+    Genres: ["Animation", "Action", "Adventure", "Fantasy"],
+    Directors: ["Hayao Miyazaki"],
+    Writers: ["Hayao Miyazaki"],
+    Actors: ["Yôji Matsuda", "Yuriko Ishida", "Yûko Tanaka"],
+    Plot: "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony.",
+    Poster:
+      "https://image.tmdb.org/t/p/w600_and_h900_face/cMYCDADoLKLbB83g4WnJegaZimC.jpg",
+    Metascore: 76,
+    imdbRating: 8.4,
+  },
 };

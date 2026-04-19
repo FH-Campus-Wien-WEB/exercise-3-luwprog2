@@ -1,20 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edit movie</title>
-    <link rel="stylesheet" href="edit.css"/>
+    <link rel="stylesheet" href="edit.css" />
     <script src="edit.js" defer></script>
-  </head> 
+  </head>
   <body>
-    <form> 
+    <form>
       <input type="hidden" id="imdbID" />
-      <div><label for="Title">Title</label><input type="text" id="Title" /></div>
-      <div><label for="Released">Released On</label><input type="date" id="Released" /></div>
-      <div><label for="Runtime">Runtime</label><input type="number" id="Runtime" min="0"/></div>
-      <div><label for="Plot">Plot</label><textarea row="5" id="Plot"></textarea></div>
-      <div><label for="Poster">Poster URL</label><input type="url" id="Poster" /></div>
+      <div>
+        <label for="Title">Title</label><input type="text" id="Title" />
+      </div>
+      <div>
+        <label for="Released">Released On</label
+        ><input type="date" id="Released" />
+      </div>
+      <div>
+        <label for="Runtime">Runtime</label
+        ><input type="number" id="Runtime" min="0" />
+      </div>
+      <div>
+        <label for="Plot">Plot</label><textarea row="5" id="Plot"></textarea>
+      </div>
+      <div>
+        <label for="Poster">Poster URL</label><input type="url" id="Poster" />
+      </div>
       <div>
         <label for="Metascore">Metascore</label>
         <input type="number" id="Metascore" min="0" max="100" />
@@ -53,14 +65,24 @@
         </select>
       </div>
 
-      <div><label for="Directors">Directors</label><input type="text" id="Directors" /></div>
-      <div><label for="Writers">Writers</label><input type="text" id="Writers" /></div>
-      <div><label for="Actors">Actors</label><input type="text" id="Actors" /></div>
+      <div>
+        <label for="Directors">Directors</label
+        ><input type="text" id="Directors" />
+      </div>
+      <div>
+        <label for="Writers">Writers</label><input type="text" id="Writers" />
+      </div>
+      <div>
+        <label for="Actors">Actors</label><input type="text" id="Actors" />
+      </div>
       <div>
         <button type="button" onclick="putMovie()">Save</button>
-        <button type="button" onclick="location.href = 'index.html'">Cancel</button>
+        <button type="button" onclick="location.href = 'index.html'">
+          Cancel
+        </button>
       </div>
     </form>
-    
+
+    <script src="edit.js"></script>
   </body>
 </html>

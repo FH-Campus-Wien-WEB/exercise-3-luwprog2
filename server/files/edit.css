@@ -5,7 +5,23 @@ select,
 textarea {
   width: 100%;
 }
-
+/*in the second exercise was 12px.*/
 div {
   margin: 4px 0px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px; /* 让 Save 和 Cancel 按钮之间有空隙 */
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
 }
