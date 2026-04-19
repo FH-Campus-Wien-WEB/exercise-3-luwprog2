@@ -6,20 +6,34 @@ h1 {
 }
 
 /* Constrain the page to the viewport */
-html, body {
+html,
+body {
   height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Center the nav's header and list */
 nav {
+  background-color: rgb(6, 50, 78);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 8px;
 }
 
 /* navigation buttons have full width */
 nav button {
-  width: 100%;
+  width: 150px;
+  text-align: center;
+}
+nav ul li:first-child button {
+  background-color: #2196f3;
+  font-weight: bold;
 }
 
 /* Remove unnecessary space and bullets from the lists */
@@ -30,30 +44,79 @@ ul {
 }
 
 /* Task 2.1. Lay out the childs of the 'body' using Grid Template Areas. */
-
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+      "h h"
+      "n m"
+      "f f";
+  }
+  header {
+    grid-area: h;
+  }
+  nav {
+    grid-area: n;
+  }
+  main {
+    grid-area: m;
+  }
+  footer {
+    grid-area: f;
+  }
+}
+main {
+  overflow-y: auto;
+}
 
 /* Task 3.1. Make the header element a flex container and center its children
    vertically and horizontally.
  */
-
+header {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  background-color: rgb(6, 50, 78);
+}
 
 /* Task 3.2. Make the list items of the unordered list in the nav element a flex container, 
    use column direction and center the child items
  */
+nav ul {
+  padding: 0px;
+  margin: 16px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* 按钮间距 */
+}
 
 /* Task 3.3. Make the main element a Flexbox container */
-
-
+main {
+  display: flex;
+  flex-wrap: wrap; /* 电影卡片自动换行 */
+  justify-content: center; /* 卡片居中 */
+  gap: 16px;
+}
 /* Task 3.4. Make the footer's ul a Flexbox container */
-
-
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+  padding: 0;
+  color: black;
+}
 /* From here on styling from exercise 1 */
 img {
   border-radius: 12px;
 }
 
 article {
-  background-color: lightgray;
+  background-color: rgb(6, 50, 78);
   border-radius: 16px;
   padding: 16px;
   width: 384px;

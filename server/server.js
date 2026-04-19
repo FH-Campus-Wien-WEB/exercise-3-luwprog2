@@ -23,6 +23,7 @@ app.get("/genres", function (req, res) {
   let allGenres = movies.flatMap((movie) => movie.Genres);
   const uniqueGenres = [...new Set(allGenres)];
   const sortedGenres = uniqueGenres.sort();
+  res.json(sortedGenres);
 });
 
 /* Task 1.4: Extend the GET /movies endpoint:
@@ -31,7 +32,18 @@ app.get("/genres", function (req, res) {
  */
 app.get("/movies", function (req, res) {
   let movies = Object.values(movieModel);
-  res.send(movies);
+  const selectedGenre = req.query.genre;
+
+  if (selectedGenre) {
+    // 修正点 1: 正确使用箭头函数 (movie) => ...
+    const filteredMovies = movies.filter((movie) => {
+      return movie.Genres && movie.Genres.includes(selectedGenre);
+    });
+
+    res.json(filteredMovies);
+  } else {
+    res.json(movies);
+  }
 });
 
 // Configure a 'get' endpoint for a specific movie
