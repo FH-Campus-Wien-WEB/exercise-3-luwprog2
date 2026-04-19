@@ -135,6 +135,6 @@ span {
   padding: 4px 8px;
   border: solid black 1px;
   border-radius: 6px;
-  background-color: darkgray;
+  background-color: rgba(7, 7, 7, 0.621);
   font-weight: bold;
 }
