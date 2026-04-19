@@ -91,14 +91,14 @@ nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; /* 按钮间距 */
+  gap: 15px; /* 按钮间距 */
 }
 
 /* Task 3.3. Make the main element a Flexbox container */
 main {
   display: flex;
   flex-wrap: wrap; /* 电影卡片自动换行 */
-  justify-content: center; /* 卡片居中 */
+  justify-content: center;
   gap: 16px;
 }
 /* Task 3.4. Make the footer's ul a Flexbox container */
